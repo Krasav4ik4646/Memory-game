@@ -60,6 +60,7 @@ for (let i = 0; i < playCards.length; i++) {
           // приховуємо картки, захист від неіснуючого елементу
           if (choosenCards[0]) playCards[choosenCardsId[0]].style.visibility = "hidden";
           if (choosenCards[1]) playCards[choosenCardsId[1]].style.visibility = "hidden";
+          sound3.play();
           points++;
         }
         else {
@@ -71,7 +72,6 @@ for (let i = 0; i < playCards.length; i++) {
         if (choosenCards[1]) playCards[choosenCardsId[1]].style.backgroundColor = "#eee";
         choosenCards = [];
         choosenCardsId = [];
-        sound3.play();
       }, 1000)
     }
     console.log(choosenCards);
