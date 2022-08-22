@@ -95,5 +95,16 @@ localStorage.setItem('bgColor', 'green');
 
 
 var sound1 = new Audio();
-sound1.src = "music/game.mp3"
+sound1.src = "game.mp3"
 sound1.play();
+
+var sound2 = new Audio();
+sound2.src = "lose.mp3"
+sound2.play();
+
+var sound3 = new Audio();
+sound3.src = "pop.mp3"
+sound3.play();
+
+
+
