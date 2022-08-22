@@ -1,6 +1,13 @@
 var sound1 = new Audio();
-sound1.src = "music/game.mp3"
+sound1.src = "game.mp3"
 sound1.play();
+
+var sound2 = new Audio();
+sound2.src = "lose.mp3"
+
+var sound3 = new Audio();
+sound3.src = "pop.mp3";
+
 // масив карток
 const cards = [
   {
@@ -57,11 +64,13 @@ for (let i = 0; i < playCards.length; i++) {
         else {
           if (choosenCardsId[0]) playCards[choosenCardsId[0]].style.backgroundImage = "none";
           if (choosenCardsId[1]) playCards[choosenCardsId[1]].style.backgroundImage = "none";
+          sound2.play();
         }
         if (choosenCards[0]) playCards[choosenCardsId[0]].style.backgroundColor = "#eee";
         if (choosenCards[1]) playCards[choosenCardsId[1]].style.backgroundColor = "#eee";
         choosenCards = [];
         choosenCardsId = [];
+        sound3.play();
       }, 1000)
     }
     console.log(choosenCards);
@@ -98,13 +107,6 @@ var sound1 = new Audio();
 sound1.src = "game.mp3"
 sound1.play();
 
-var sound2 = new Audio();
-sound2.src = "lose.mp3"
-sound2.play();
-
-var sound3 = new Audio();
-sound3.src = "pop.mp3"
-sound3.play();
 
 
 
