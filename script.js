@@ -94,9 +94,6 @@ initSec();
 localStorage.setItem('bgColor', 'green');
 
 
-
-document.addEventListener("load", function(){
 var sound1 = new Audio();
 sound1.src = "music/game.mp3"
 sound1.play();
-})
