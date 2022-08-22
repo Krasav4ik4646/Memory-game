@@ -1,3 +1,4 @@
+// звуки 
 var sound1 = new Audio();
 sound1.src = "game.mp3"
 sound1.play();
@@ -102,10 +103,6 @@ initSec();
 
 localStorage.setItem('bgColor', 'green');
 
-
-var sound1 = new Audio();
-sound1.src = "game.mp3"
-sound1.play();
 
 
 
